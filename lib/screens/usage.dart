@@ -10,17 +10,17 @@ class MyUsage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          automaticallyImplyLeading: true,
-          //`true` if you want Flutter to automatically add Back Button when needed,
-          //or `false` if you want to force your own back button every where
-          title: Text('Usage Page'),
-          backgroundColor: Colors.black,
-          foregroundColor: Colors.white,
-          leading: IconButton(icon:Icon(Icons.arrow_back),
-            onPressed:() => Navigator.pushReplacementNamed(context, '/home'),
-          )
-      ),
+      // appBar: AppBar(
+      //     automaticallyImplyLeading: true,
+      //     //`true` if you want Flutter to automatically add Back Button when needed,
+      //     //or `false` if you want to force your own back button every where
+      //     title: Text('Usage Page'),
+      //     backgroundColor: Colors.black,
+      //     foregroundColor: Colors.white,
+      //     leading: IconButton(icon:Icon(Icons.arrow_back),
+      //       onPressed:() => Navigator.pushReplacementNamed(context, '/home'),
+      //     )
+      // ),
       body: SizedBox.expand( // -> 01
         child: Container(
           decoration: BoxDecoration(
@@ -111,19 +111,6 @@ class MyUsage extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              // InkWell(
-              //   onTap: () {
-              //     Navigator.pushReplacementNamed(context, '/cart');
-              //   },
-              //   child: ClipRRect(
-              //       borderRadius: BorderRadius.circular(20.0),
-              //       child: Image.asset(
-              //         'assets/images/devices_list.png'
-              //         // width: 400, 
-              //         // height: 400
-              //       ),
-              //     ),
-              // ),
               Row(
                 // crossAxisAlignment: CrossAxisAlignment.baseline,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -136,7 +123,7 @@ class MyUsage extends StatelessWidget {
                     // color: Colors.teal,
                     child: InkWell(
                       onTap: () {
-                        Navigator.pushReplacementNamed(context, '/cart');
+                        Navigator.pushReplacementNamed(context, '/pv_cells');
                       },
                       child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),

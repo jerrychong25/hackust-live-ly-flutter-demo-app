@@ -15,6 +15,7 @@ import 'package:provider_shopper/screens/catalog.dart';
 import 'package:provider_shopper/screens/login.dart';
 import 'package:provider_shopper/screens/home.dart';
 import 'package:provider_shopper/screens/usage.dart';
+import 'package:provider_shopper/screens/pv_cells.dart';
 import 'package:window_size/window_size.dart';
 
 void main() {
@@ -74,6 +75,7 @@ class MyApp extends StatelessWidget {
           '/cart': (context) => const MyCart(),
           '/home': (context) => const MyHome(),
           '/usage': (context) => const MyUsage(),
+          '/pv_cells': (context) => const MyPVCells(),
         },
       ),
     );

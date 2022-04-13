@@ -90,6 +90,9 @@ class MyPVCells extends StatelessWidget {
                           ),
                         ),
                       ),
+                      const SizedBox(
+                        width: 10,
+                      ),
                       Container(
                         alignment: Alignment.center,
                         width: 100,
@@ -103,6 +106,9 @@ class MyPVCells extends StatelessWidget {
                           ),
                         ),
                       ),
+                      const SizedBox(
+                        width: 10,
+                      ),
                       Container(
                         alignment: Alignment.center,
                         width: 100,
@@ -112,11 +118,15 @@ class MyPVCells extends StatelessWidget {
                             borderRadius: BorderRadius.circular(20.0),
                             child: Image.asset(
                                 'assets/images/total_yield_box.png',
-                                height: 200),
+                                height: 180),
                           ),
                         ),
                       ),
-                    ]),
+                    ]
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
                 SwitchButton(),
               ],
             ),

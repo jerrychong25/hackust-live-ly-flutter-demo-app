@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class MyLogin extends StatelessWidget {
   const MyLogin({Key? key}) : super(key: key);
@@ -71,28 +72,58 @@ class MyLogin extends StatelessWidget {
                 height: 40,
               ),
               ElevatedButton(
-                child: const Text('Login'),
                 onPressed: () {
-                  // Navigator.pushReplacementNamed(context, '/catalog');
+                  Fluttertoast.showToast(
+                    msg: 'Login Success!',
+                    toastLength: Toast.LENGTH_LONG
+                  );
                   Navigator.pushReplacementNamed(context, '/home');
                 },
-                style: ElevatedButton.styleFrom(
-                  primary: Color(0xFFACF13C),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.black),
+                ),
+                child: Ink(
+                  decoration: new BoxDecoration(
+                    borderRadius: BorderRadius.circular(60),
+                    gradient: new LinearGradient(
+                      colors: [Colors.green[300] as Color, Colors.green[500] as Color],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 70, vertical: 15),
+                  child: new Text('Login', style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 17.0,
+                  )),
                 ),
               ),
               const SizedBox(
                 height: 20,
               ),
               ElevatedButton(
-                child: const Text('Register'),
                 onPressed: () {
-                  // Navigator.pushReplacementNamed(context, '/cart');
-                  Navigator.pushReplacementNamed(context, '/cart');
+                  Navigator.pushReplacementNamed(context, '/register');
                 },
-                style: ElevatedButton.styleFrom(
-                  primary: Color(0xFFACF13C),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.black),
                 ),
-              )
+                child: Ink(
+                  decoration: new BoxDecoration(
+                    borderRadius: BorderRadius.circular(60),
+                    gradient: new LinearGradient(
+                      colors: [Colors.green[300] as Color, Colors.green[500] as Color],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 60, vertical: 15),
+                  child: new Text('Register', style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 17.0,
+                  )),
+                ),
+              ),
             ],
           ),
         ),

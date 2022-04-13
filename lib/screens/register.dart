@@ -1,6 +1,5 @@
-// Copyright 2020 The Flutter team. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+// Copyright 2022 Live.ly team.
+// All rights reserved.
 
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -19,15 +18,6 @@ class MyRegister extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset('assets/images/logo.png'),
-              // Text(
-              //   'Welcome',
-              //   // style: Theme.of(context).textTheme.headline1,
-              //   // style: const TextStyle(color: Colors.white),
-              //   style: TextStyle(
-              //     fontSize: 30.0,
-              //     color: Colors.white,
-              //   ),
-              // ),
               const SizedBox(
                 height: 40,
               ),
@@ -36,9 +26,9 @@ class MyRegister extends StatelessWidget {
                   hintText: 'Username',
                   hintStyle: TextStyle(color: Colors.grey),
                   contentPadding: EdgeInsets.symmetric(vertical: 15),
-                  enabledBorder: UnderlineInputBorder(      
-                    borderSide: BorderSide(color: Colors.grey),   
-                  ),  
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.grey),
+                  ),
                   focusedBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.grey),
                   ),
@@ -54,9 +44,9 @@ class MyRegister extends StatelessWidget {
                   hintText: 'Password',
                   hintStyle: TextStyle(color: Colors.grey),
                   contentPadding: EdgeInsets.symmetric(vertical: 15),
-                  enabledBorder: UnderlineInputBorder(      
-                    borderSide: BorderSide(color: Colors.grey),   
-                  ),  
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.grey),
+                  ),
                   focusedBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.grey),
                   ),
@@ -73,9 +63,9 @@ class MyRegister extends StatelessWidget {
                   hintText: 'Confirm Password',
                   hintStyle: TextStyle(color: Colors.grey),
                   contentPadding: EdgeInsets.symmetric(vertical: 15),
-                  enabledBorder: UnderlineInputBorder(      
-                    borderSide: BorderSide(color: Colors.grey),   
-                  ),  
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.grey),
+                  ),
                   focusedBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.grey),
                   ),
@@ -93,9 +83,7 @@ class MyRegister extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {
                   Fluttertoast.showToast(
-                    msg: 'Register Success!',
-                    toastLength: Toast.LENGTH_LONG
-                  );
+                      msg: 'Register Success!', toastLength: Toast.LENGTH_LONG);
                   Navigator.pushReplacementNamed(context, '/home');
                 },
                 style: ButtonStyle(
@@ -105,16 +93,20 @@ class MyRegister extends StatelessWidget {
                   decoration: new BoxDecoration(
                     borderRadius: BorderRadius.circular(60),
                     gradient: new LinearGradient(
-                      colors: [Colors.green[300] as Color, Colors.green[500] as Color],
+                      colors: [
+                        Colors.green[300] as Color,
+                        Colors.green[500] as Color
+                      ],
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                     ),
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 60, vertical: 15),
-                  child: new Text('Register', style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 17.0,
-                  )),
+                  child: new Text('Register',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 17.0,
+                      )),
                 ),
               ),
             ],

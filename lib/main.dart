@@ -1,6 +1,5 @@
-// Copyright 2019 The Flutter team. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+// Copyright 2022 Live.ly team.
+// All rights reserved.
 
 import 'dart:io';
 
@@ -11,8 +10,6 @@ import 'package:provider/provider.dart';
 import 'package:provider_shopper/common/theme.dart';
 import 'package:provider_shopper/models/cart.dart';
 import 'package:provider_shopper/models/catalog.dart';
-import 'package:provider_shopper/screens/cart.dart';
-import 'package:provider_shopper/screens/catalog.dart';
 import 'package:provider_shopper/screens/login.dart';
 import 'package:provider_shopper/screens/register.dart';
 import 'package:provider_shopper/screens/home.dart';
@@ -31,7 +28,7 @@ const double windowHeight = 800;
 void setupWindow() {
   if (!kIsWeb && (Platform.isWindows || Platform.isLinux || Platform.isMacOS)) {
     WidgetsFlutterBinding.ensureInitialized();
-    setWindowTitle('Provider Demo');
+    setWindowTitle('Live.ly Demo');
     setWindowMinSize(const Size(windowWidth, windowHeight));
     setWindowMaxSize(const Size(windowWidth, windowHeight));
     getCurrentScreen().then((screen) {
@@ -75,8 +72,6 @@ class MyApp extends StatelessWidget {
         routes: {
           '/login': (context) => const MyLogin(),
           '/register': (context) => const MyRegister(),
-          '/catalog': (context) => const MyCatalog(),
-          '/cart': (context) => const MyCart(),
           '/home': (context) => const MyHome(),
           '/usage': (context) => const MyUsage(),
           '/pv_cells': (context) => const MyPVCells(),

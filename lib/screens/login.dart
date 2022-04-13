@@ -1,6 +1,5 @@
-// Copyright 2020 The Flutter team. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+// Copyright 2022 Live.ly team.
+// All rights reserved.
 
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -19,15 +18,6 @@ class MyLogin extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset('assets/images/logo.png'),
-              // Text(
-              //   'Welcome',
-              //   // style: Theme.of(context).textTheme.headline1,
-              //   // style: const TextStyle(color: Colors.white),
-              //   style: TextStyle(
-              //     fontSize: 30.0,
-              //     color: Colors.white,
-              //   ),
-              // ),
               const SizedBox(
                 height: 40,
               ),

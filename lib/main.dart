@@ -13,6 +13,7 @@ import 'package:provider_shopper/models/catalog.dart';
 import 'package:provider_shopper/screens/cart.dart';
 import 'package:provider_shopper/screens/catalog.dart';
 import 'package:provider_shopper/screens/login.dart';
+import 'package:provider_shopper/screens/home.dart';
 import 'package:window_size/window_size.dart';
 
 void main() {

@@ -10,90 +10,88 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
-      body: Center(
+      body: SizedBox.expand( // -> 01
         child: Container(
-          padding: const EdgeInsets.all(80.0),
-          child: Column(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/images/app_background.png'),
+              fit: BoxFit.cover,    // -> 02
+            )
+          ),
+          padding: const EdgeInsets.all(20.0),
+          child: Container(
+            color: Colors.black,
+            child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/images/logo.png'),
-              // Text(
-              //   'Welcome',
-              //   // style: Theme.of(context).textTheme.headline1,
-              //   // style: const TextStyle(color: Colors.white),
-              //   style: TextStyle(
-              //     fontSize: 30.0,
-              //     color: Colors.white,
-              //   ),
+              Image.asset(
+                'assets/images/logo.png',
+                height: 300,
+              ),
+              const SizedBox(
+                height: 40,
+              ),
+              Text(
+                'Your one app for energy management',
+                style: TextStyle(
+                  fontSize: 22.0,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              Text(
+                'opportunities and smart',
+                style: TextStyle(
+                  fontSize: 22.0,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              Text(
+                'eco-living ideas',
+                style: TextStyle(
+                  fontSize: 22.0,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(
+                height: 25,
+              ),
+              // Image.asset(
+              //   'assets/images/start_button.png',
+              //   height: 150,
+              //   width: 150,
+              //   onPressed: () {
+              //     // Navigator.push(
+              //     //   context,
+              //     //   MaterialPageRoute(builder: (context) => SecondRoute()),
+              //     // );
+              //     Navigator.pushReplacementNamed(context, '/');
+              //   }
               // ),
-              const SizedBox(
-                height: 40,
-              ),
-              TextFormField(
-                decoration: const InputDecoration(
-                  hintText: 'Username',
-                  hintStyle: TextStyle(color: Colors.grey),
-                  contentPadding: EdgeInsets.symmetric(vertical: 15),
-                  enabledBorder: UnderlineInputBorder(      
-                    borderSide: BorderSide(color: Colors.grey),   
-                  ),  
-                  focusedBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
-                  border: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
-                ),
-                style: TextStyle(color: Color(0xFFACF13C)),
-                cursorColor: Colors.yellow,
-              ),
-              TextFormField(
-                decoration: const InputDecoration(
-                  hintText: 'Password',
-                  hintStyle: TextStyle(color: Colors.grey),
-                  contentPadding: EdgeInsets.symmetric(vertical: 15),
-                  enabledBorder: UnderlineInputBorder(      
-                    borderSide: BorderSide(color: Colors.grey),   
-                  ),  
-                  focusedBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
-                  border: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
-                ),
-                style: TextStyle(color: Color(0xFFACF13C)),
-                cursorColor: Colors.yellow,
-                obscureText: true,
-              ),
-              const SizedBox(
-                height: 40,
-              ),
-              ElevatedButton(
-                child: const Text('Login'),
-                onPressed: () {
-                  // Navigator.pushReplacementNamed(context, '/catalog');
-                  Navigator.pushReplacementNamed(context, '/catalog');
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: Color(0xFFACF13C),
-                ),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              ElevatedButton(
-                child: const Text('Register'),
-                onPressed: () {
-                  // Navigator.pushReplacementNamed(context, '/cart');
+              InkWell(
+                onTap: () {
                   Navigator.pushReplacementNamed(context, '/cart');
                 },
-                style: ElevatedButton.styleFrom(
-                  primary: Color(0xFFACF13C),
-                ),
-              )
+                child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20.0),
+                    child: Image.asset('assets/images/start_button.png',
+                        width: 150, height: 150),
+                  ),
+              ),
+              // ElevatedButton(
+              //   child: const Text('Login'),
+              //   onPressed: () {
+              //     // Navigator.pushReplacementNamed(context, '/catalog');
+              //     Navigator.pushReplacementNamed(context, '/catalog');
+              //   },
+              //   style: ElevatedButton.styleFrom(
+              //     primary: Color(0xFFACF13C),
+              //   ),
+              // )
             ],
+          ),
           ),
         ),
       ),

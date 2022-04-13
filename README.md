@@ -4,6 +4,11 @@ This is HackUST Live.ly team demo app source code.
 
 ## Framework
 * Flutter
+
+## Android APK Download 
+```
+https://github.com/jerrychong25/hackust-live-ly-flutter-demo-app/blob/main/build/app/outputs/flutter-apk/app-release.apk
+```
 ## Build Project
 
 ```dart

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jerrychong/Documents/Software/Flutter/provider_shopper/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/jerrychong/Documents/GitHub/hackust-live-ly-flutter-demo-app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/jerrychong/Documents/Software/Flutter/provider_shopper/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/jerrychong/Documents/GitHub/hackust-live-ly-flutter-demo-app/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

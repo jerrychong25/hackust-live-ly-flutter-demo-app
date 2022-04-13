@@ -1,4 +1,4 @@
-#Wed Apr 13 10:18:51 MYT 2022
-base.0=/Users/jerrychong/Documents/Software/Flutter/provider_shopper/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Wed Apr 13 10:32:56 MYT 2022
+base.0=/Users/jerrychong/Documents/GitHub/hackust-live-ly-flutter-demo-app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

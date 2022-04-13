@@ -10,33 +10,31 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
-      body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/bulb.jpg"),
-            fit: BoxFit.cover,
-          ),
-        ),
-        child: null /* add child content here */,
-      )
-      Center(
+      body: SizedBox.expand( // -> 01
         child: Container(
-          padding: const EdgeInsets.all(80.0),
-          child: Column(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/images/app_background.png'),
+              fit: BoxFit.cover,    // -> 02
+            )
+          ),
+          padding: const EdgeInsets.all(20.0),
+          child: Container(
+            color: Colors.black,
+            child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
                 'assets/images/logo.png',
-                height: 330,
+                height: 300,
               ),
-              // const SizedBox(
-              //   height: 40,
-              // ),
+              const SizedBox(
+                height: 40,
+              ),
               Text(
                 'Your one app for energy management',
                 style: TextStyle(
-                  fontSize: 15.0,
+                  fontSize: 22.0,
                   color: Colors.white,
                 ),
                 textAlign: TextAlign.center,
@@ -44,7 +42,7 @@ class MyHome extends StatelessWidget {
               Text(
                 'opportunities and smart',
                 style: TextStyle(
-                  fontSize: 15.0,
+                  fontSize: 22.0,
                   color: Colors.white,
                 ),
                 textAlign: TextAlign.center,
@@ -52,7 +50,7 @@ class MyHome extends StatelessWidget {
               Text(
                 'eco-living ideas',
                 style: TextStyle(
-                  fontSize: 15.0,
+                  fontSize: 22.0,
                   color: Colors.white,
                 ),
                 textAlign: TextAlign.center,
@@ -60,10 +58,27 @@ class MyHome extends StatelessWidget {
               const SizedBox(
                 height: 25,
               ),
-              Image.asset(
-                'assets/images/start_button.png',
-                height: 120,
-                width: 120,
+              // Image.asset(
+              //   'assets/images/start_button.png',
+              //   height: 150,
+              //   width: 150,
+              //   onPressed: () {
+              //     // Navigator.push(
+              //     //   context,
+              //     //   MaterialPageRoute(builder: (context) => SecondRoute()),
+              //     // );
+              //     Navigator.pushReplacementNamed(context, '/');
+              //   }
+              // ),
+              InkWell(
+                onTap: () {
+                  Navigator.pushReplacementNamed(context, '/cart');
+                },
+                child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20.0),
+                    child: Image.asset('assets/images/start_button.png',
+                        width: 150, height: 150),
+                  ),
               ),
               // ElevatedButton(
               //   child: const Text('Login'),
@@ -76,6 +91,7 @@ class MyHome extends StatelessWidget {
               //   ),
               // )
             ],
+          ),
           ),
         ),
       ),

@@ -10,6 +10,17 @@ class MyUsage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+          automaticallyImplyLeading: true,
+          //`true` if you want Flutter to automatically add Back Button when needed,
+          //or `false` if you want to force your own back button every where
+          title: Text('Usage Page'),
+          backgroundColor: Colors.black,
+          foregroundColor: Colors.white,
+          leading: IconButton(icon:Icon(Icons.arrow_back),
+            onPressed:() => Navigator.pushReplacementNamed(context, '/home'),
+          )
+      ),
       body: SizedBox.expand( // -> 01
         child: Container(
           decoration: BoxDecoration(

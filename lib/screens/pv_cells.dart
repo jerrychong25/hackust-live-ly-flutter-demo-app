@@ -148,8 +148,8 @@ class SwitchButton extends StatefulWidget {
 }  
   
 class SwitchClass extends State {  
-  bool isSwitched = false;  
-  var textValue = 'Switch is OFF';  
+  bool isSwitched = true;  
+  var textValue = 'Activated';  
   
   void toggleSwitch(bool value) {  
   
@@ -199,29 +199,5 @@ class SwitchClass extends State {
                   )
                 ]
               );
-
-    // Column(  
-    //     mainAxisAlignment: MainAxisAlignment.center,  
-    //     children:[ 
-    //       Transform.scale(  
-    //         scale: 2,  
-    //         child: Switch(  
-    //           onChanged: toggleSwitch,  
-    //           value: isSwitched,  
-    //           activeColor: Colors.white,  
-    //           activeTrackColor: Colors.greenAccent,  
-    //           inactiveThumbColor: Colors.white,  
-    //           inactiveTrackColor: Colors.redAccent,  
-    //         )  
-    //       ),  
-    //       Text(
-    //         '$textValue', 
-    //         style: TextStyle(
-    //           fontSize: 20.0,
-    //           color: Colors.grey,
-    //         ),  
-    //       ) 
-    //     ]
-    // );  
   }  
 }  

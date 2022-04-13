@@ -132,6 +132,7 @@ class MyPVCells extends StatelessWidget {
                   ),
                 ]
               ),
+              SwitchButton(),
             ],
           ),
           ),
@@ -140,3 +141,87 @@ class MyPVCells extends StatelessWidget {
     );
   }
 }
+
+class SwitchButton extends StatefulWidget {  
+  @override  
+  SwitchClass createState() => new SwitchClass();  
+}  
+  
+class SwitchClass extends State {  
+  bool isSwitched = false;  
+  var textValue = 'Switch is OFF';  
+  
+  void toggleSwitch(bool value) {  
+  
+    if(isSwitched == false)  
+    {  
+      setState(() {  
+        isSwitched = true;  
+        textValue = 'Activated';  
+      });  
+      print('Switch Button is ON - Activated');  
+    }  
+    else  
+    {  
+      setState(() {  
+        isSwitched = false;  
+        textValue = 'Disabled';  
+      });  
+      print('Switch Button is OFF - Disabled');  
+    }
+  }  
+
+  @override  
+  Widget build(BuildContext context) {  
+    return
+      Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                textBaseline: TextBaseline.alphabetic,
+                children: [
+                  Transform.scale(  
+                    scale: 2,  
+                    child: Switch(  
+                      onChanged: toggleSwitch,  
+                      value: isSwitched,  
+                      activeColor: Colors.white,  
+                      activeTrackColor: Colors.greenAccent,  
+                      inactiveThumbColor: Colors.white,  
+                      inactiveTrackColor: Colors.redAccent,  
+                    )  
+                  ),  
+                  SizedBox(width:20),
+                  Text(
+                    '$textValue', 
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.grey,
+                    ),  
+                  )
+                ]
+              );
+
+    // Column(  
+    //     mainAxisAlignment: MainAxisAlignment.center,  
+    //     children:[ 
+    //       Transform.scale(  
+    //         scale: 2,  
+    //         child: Switch(  
+    //           onChanged: toggleSwitch,  
+    //           value: isSwitched,  
+    //           activeColor: Colors.white,  
+    //           activeTrackColor: Colors.greenAccent,  
+    //           inactiveThumbColor: Colors.white,  
+    //           inactiveTrackColor: Colors.redAccent,  
+    //         )  
+    //       ),  
+    //       Text(
+    //         '$textValue', 
+    //         style: TextStyle(
+    //           fontSize: 20.0,
+    //           color: Colors.grey,
+    //         ),  
+    //       ) 
+    //     ]
+    // );  
+  }  
+}  

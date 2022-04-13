@@ -72,7 +72,7 @@ class MyHome extends StatelessWidget {
               // ),
               InkWell(
                 onTap: () {
-                  Navigator.pushReplacementNamed(context, '/cart');
+                  Navigator.pushReplacementNamed(context, '/usage');
                 },
                 child: ClipRRect(
                     borderRadius: BorderRadius.circular(20.0),

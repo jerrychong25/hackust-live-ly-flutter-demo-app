@@ -13,6 +13,7 @@ import 'package:provider_shopper/models/catalog.dart';
 import 'package:provider_shopper/screens/cart.dart';
 import 'package:provider_shopper/screens/catalog.dart';
 import 'package:provider_shopper/screens/login.dart';
+import 'package:provider_shopper/screens/register.dart';
 import 'package:provider_shopper/screens/home.dart';
 import 'package:provider_shopper/screens/usage.dart';
 import 'package:provider_shopper/screens/pv_cells.dart';
@@ -71,6 +72,7 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => const MyLogin(),
+          '/register': (context) => const MyRegister(),
           '/catalog': (context) => const MyCatalog(),
           '/cart': (context) => const MyCart(),
           '/home': (context) => const MyHome(),

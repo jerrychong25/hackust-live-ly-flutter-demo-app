@@ -18,7 +18,9 @@ dependencies:
       url: https://github.com/google/flutter-desktop-embedding.git
       path: plugins/window_size
   # Flutter Toast package
-  fluttertoast: ^8.0.9
+  fluttertoast:
+  # Flutter Splash Screen
+  splashscreen:
   # Get package
   get:
 

@@ -6,6 +6,7 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:splashscreen/splashscreen.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_shopper/common/theme.dart';
 import 'package:provider_shopper/models/cart.dart';
@@ -69,9 +70,10 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Live.ly Demo',
         theme: appTheme,
-        initialRoute: '/',
+        home: SplashPage(),
+        // initialRoute: '/',
         routes: {
-          '/': (context) => const MyLogin(),
+          '/login': (context) => const MyLogin(),
           '/register': (context) => const MyRegister(),
           '/catalog': (context) => const MyCatalog(),
           '/cart': (context) => const MyCart(),
@@ -81,5 +83,24 @@ class MyApp extends StatelessWidget {
         },
       ),
     );
+  }
+}
+
+class SplashPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SplashScreen(
+        seconds: 5,
+        navigateAfterSeconds: MyLogin(),
+        // title: new Text(
+        //   'Live.ly',
+        //   style: new TextStyle(
+        //       fontWeight: FontWeight.bold, fontSize: 20.0, color: Colors.white),
+        // ),
+        image: new Image.asset('assets/images/logo.png'),
+        photoSize: 100.0,
+        backgroundColor: Colors.black,
+        styleTextUnderTheLoader: new TextStyle(),
+        loaderColor: Colors.white);
   }
 }

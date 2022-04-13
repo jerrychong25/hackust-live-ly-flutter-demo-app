@@ -36,9 +36,9 @@ class MyLogin extends StatelessWidget {
                   hintText: 'Username',
                   hintStyle: TextStyle(color: Colors.grey),
                   contentPadding: EdgeInsets.symmetric(vertical: 15),
-                  enabledBorder: UnderlineInputBorder(      
-                    borderSide: BorderSide(color: Colors.grey),   
-                  ),  
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.grey),
+                  ),
                   focusedBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.grey),
                   ),
@@ -54,9 +54,9 @@ class MyLogin extends StatelessWidget {
                   hintText: 'Password',
                   hintStyle: TextStyle(color: Colors.grey),
                   contentPadding: EdgeInsets.symmetric(vertical: 15),
-                  enabledBorder: UnderlineInputBorder(      
-                    borderSide: BorderSide(color: Colors.grey),   
-                  ),  
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.grey),
+                  ),
                   focusedBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.grey),
                   ),
@@ -74,9 +74,7 @@ class MyLogin extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {
                   Fluttertoast.showToast(
-                    msg: 'Login Success!',
-                    toastLength: Toast.LENGTH_LONG
-                  );
+                      msg: 'Login Success!', toastLength: Toast.LENGTH_LONG);
                   Navigator.pushReplacementNamed(context, '/home');
                 },
                 style: ButtonStyle(
@@ -86,16 +84,20 @@ class MyLogin extends StatelessWidget {
                   decoration: new BoxDecoration(
                     borderRadius: BorderRadius.circular(60),
                     gradient: new LinearGradient(
-                      colors: [Colors.green[300] as Color, Colors.green[500] as Color],
+                      colors: [
+                        Colors.green[300] as Color,
+                        Colors.green[500] as Color
+                      ],
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                     ),
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 70, vertical: 15),
-                  child: new Text('Login', style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 17.0,
-                  )),
+                  child: new Text('Login',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 17.0,
+                      )),
                 ),
               ),
               const SizedBox(
@@ -112,16 +114,20 @@ class MyLogin extends StatelessWidget {
                   decoration: new BoxDecoration(
                     borderRadius: BorderRadius.circular(60),
                     gradient: new LinearGradient(
-                      colors: [Colors.green[300] as Color, Colors.green[500] as Color],
+                      colors: [
+                        Colors.green[300] as Color,
+                        Colors.green[500] as Color
+                      ],
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                     ),
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 60, vertical: 15),
-                  child: new Text('Register', style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 17.0,
-                  )),
+                  child: new Text('Register',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 17.0,
+                      )),
                 ),
               ),
             ],

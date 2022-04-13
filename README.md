@@ -1,1 +1,1 @@
-# HackUST Live.ly Fluuter Demo App
+# HackUST Live.ly Flutter Demo App

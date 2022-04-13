@@ -11,88 +11,70 @@ class MyHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Center(
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/bulb.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: null /* add child content here */,
+      )
+      Center(
         child: Container(
           padding: const EdgeInsets.all(80.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/images/logo.png'),
-              // Text(
-              //   'Welcome',
-              //   // style: Theme.of(context).textTheme.headline1,
-              //   // style: const TextStyle(color: Colors.white),
-              //   style: TextStyle(
-              //     fontSize: 30.0,
-              //     color: Colors.white,
-              //   ),
+              Image.asset(
+                'assets/images/logo.png',
+                height: 330,
+              ),
+              // const SizedBox(
+              //   height: 40,
               // ),
-              const SizedBox(
-                height: 40,
-              ),
-              TextFormField(
-                decoration: const InputDecoration(
-                  hintText: 'Username',
-                  hintStyle: TextStyle(color: Colors.grey),
-                  contentPadding: EdgeInsets.symmetric(vertical: 15),
-                  enabledBorder: UnderlineInputBorder(      
-                    borderSide: BorderSide(color: Colors.grey),   
-                  ),  
-                  focusedBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
-                  border: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
+              Text(
+                'Your one app for energy management',
+                style: TextStyle(
+                  fontSize: 15.0,
+                  color: Colors.white,
                 ),
-                style: TextStyle(color: Color(0xFFACF13C)),
-                cursorColor: Colors.yellow,
+                textAlign: TextAlign.center,
               ),
-              TextFormField(
-                decoration: const InputDecoration(
-                  hintText: 'Password',
-                  hintStyle: TextStyle(color: Colors.grey),
-                  contentPadding: EdgeInsets.symmetric(vertical: 15),
-                  enabledBorder: UnderlineInputBorder(      
-                    borderSide: BorderSide(color: Colors.grey),   
-                  ),  
-                  focusedBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
-                  border: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
+              Text(
+                'opportunities and smart',
+                style: TextStyle(
+                  fontSize: 15.0,
+                  color: Colors.white,
                 ),
-                style: TextStyle(color: Color(0xFFACF13C)),
-                cursorColor: Colors.yellow,
-                obscureText: true,
+                textAlign: TextAlign.center,
+              ),
+              Text(
+                'eco-living ideas',
+                style: TextStyle(
+                  fontSize: 15.0,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
               ),
               const SizedBox(
-                height: 40,
+                height: 25,
               ),
-              ElevatedButton(
-                child: const Text('Login'),
-                onPressed: () {
-                  // Navigator.pushReplacementNamed(context, '/catalog');
-                  Navigator.pushReplacementNamed(context, '/catalog');
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: Color(0xFFACF13C),
-                ),
+              Image.asset(
+                'assets/images/start_button.png',
+                height: 120,
+                width: 120,
               ),
-              const SizedBox(
-                height: 20,
-              ),
-              ElevatedButton(
-                child: const Text('Register'),
-                onPressed: () {
-                  // Navigator.pushReplacementNamed(context, '/cart');
-                  Navigator.pushReplacementNamed(context, '/cart');
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: Color(0xFFACF13C),
-                ),
-              )
+              // ElevatedButton(
+              //   child: const Text('Login'),
+              //   onPressed: () {
+              //     // Navigator.pushReplacementNamed(context, '/catalog');
+              //     Navigator.pushReplacementNamed(context, '/catalog');
+              //   },
+              //   style: ElevatedButton.styleFrom(
+              //     primary: Color(0xFFACF13C),
+              //   ),
+              // )
             ],
           ),
         ),

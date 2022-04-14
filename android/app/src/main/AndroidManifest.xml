@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.flutter.provider_shopper">
+    package="dev.flutter.live_ly">
    <application
-        android:label="provider_shopper"
+        android:label="Live.ly"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

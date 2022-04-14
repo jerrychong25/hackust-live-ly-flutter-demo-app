@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(provider_shopper LANGUAGES CXX)
+project(live_ly LANGUAGES CXX)
 
-set(BINARY_NAME "provider_shopper")
+set(BINARY_NAME "live_ly")
 
 cmake_policy(SET CMP0063 NEW)
 

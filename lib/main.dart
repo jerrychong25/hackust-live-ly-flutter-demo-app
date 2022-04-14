@@ -7,14 +7,14 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_shopper/common/theme.dart';
-import 'package:provider_shopper/models/cart.dart';
-import 'package:provider_shopper/models/catalog.dart';
-import 'package:provider_shopper/screens/login.dart';
-import 'package:provider_shopper/screens/register.dart';
-import 'package:provider_shopper/screens/home.dart';
-import 'package:provider_shopper/screens/usage.dart';
-import 'package:provider_shopper/screens/pv_cells.dart';
+import 'package:live_ly/common/theme.dart';
+import 'package:live_ly/models/cart.dart';
+import 'package:live_ly/models/catalog.dart';
+import 'package:live_ly/screens/login.dart';
+import 'package:live_ly/screens/register.dart';
+import 'package:live_ly/screens/home.dart';
+import 'package:live_ly/screens/usage.dart';
+import 'package:live_ly/screens/pv_cells.dart';
 import 'package:window_size/window_size.dart';
 
 void main() {

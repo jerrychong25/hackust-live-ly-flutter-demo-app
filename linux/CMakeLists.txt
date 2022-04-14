@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "provider_shopper")
-set(APPLICATION_ID "dev.flutter.provider_shopper")
+set(BINARY_NAME "live_ly")
+set(APPLICATION_ID "dev.flutter.live_ly")
 
 cmake_policy(SET CMP0063 NEW)
 

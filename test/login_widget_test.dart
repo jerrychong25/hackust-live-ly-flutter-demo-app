@@ -4,10 +4,10 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_test/flutter_test.dart';
 // import 'package:provider/provider.dart';
-// import 'package:provider_shopper/models/cart.dart';
-// import 'package:provider_shopper/models/catalog.dart';
-// import 'package:provider_shopper/screens/catalog.dart';
-// import 'package:provider_shopper/screens/login.dart';
+// import 'package:live_ly/models/cart.dart';
+// import 'package:live_ly/models/catalog.dart';
+// import 'package:live_ly/screens/catalog.dart';
+// import 'package:live_ly/screens/login.dart';
 
 // void main() {
 //   testWidgets('Login page Widget test', (tester) async {

@@ -2,7 +2,7 @@
 // All rights reserved.
 
 import 'package:flutter/foundation.dart';
-import 'package:provider_shopper/models/catalog.dart';
+import 'package:live_ly/models/catalog.dart';
 
 class CartModel extends ChangeNotifier {
   /// The private field backing [catalog].

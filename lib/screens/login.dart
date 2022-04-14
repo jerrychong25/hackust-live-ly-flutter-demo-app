@@ -161,18 +161,3 @@ class MyLogin extends StatelessWidget {
     );
   }
 }
-
-// => AlertDialog(
-//           title: Text('Warning'),
-//           content: Text('Do you really want to exit'),
-//           actions: [
-//             FlatButton(
-//               child: Text('Yes'),
-//               onPressed: () => Navigator.pop(c, true),
-//             ),
-//             FlatButton(
-//               child: Text('No'),
-//               onPressed: () => Navigator.pop(c, false),
-//             ),
-//           ],
-//         ),

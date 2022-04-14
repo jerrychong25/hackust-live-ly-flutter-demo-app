@@ -10,17 +10,6 @@ class MyUsage extends StatelessWidget {
   Widget build(BuildContext context) {
     return WillPopScope(
       child: Scaffold(
-        // appBar: AppBar(
-        //     automaticallyImplyLeading: true,
-        //     //`true` if you want Flutter to automatically add Back Button when needed,
-        //     //or `false` if you want to force your own back button every where
-        //     title: Text('Usage Page'),
-        //     backgroundColor: Colors.black,
-        //     foregroundColor: Colors.white,
-        //     leading: IconButton(icon:Icon(Icons.arrow_back),
-        //       onPressed:() => Navigator.pushReplacementNamed(context, '/home'),
-        //     )
-        // ),
         body: SizedBox.expand(
           // -> 01
           child: Container(
@@ -112,7 +101,6 @@ class MyUsage extends StatelessWidget {
                     height: 20,
                   ),
                   Row(
-                      // crossAxisAlignment: CrossAxisAlignment.baseline,
                       mainAxisAlignment: MainAxisAlignment.center,
                       textBaseline: TextBaseline.alphabetic,
                       children: [

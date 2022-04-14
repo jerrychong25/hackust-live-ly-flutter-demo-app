@@ -1,4 +1,0 @@
-io/flutter/plugins/GeneratedPluginRegistrant.java
- io.flutter.plugins.GeneratedPluginRegistrant
-dev/flutter/provider_shopper/BuildConfig.java
- dev.flutter.provider_shopper.BuildConfig

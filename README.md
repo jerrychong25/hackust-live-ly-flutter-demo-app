@@ -7,8 +7,7 @@ This is HackUST Live.ly team demo app source code.
 
 <img src="https://user-images.githubusercontent.com/15714095/163304431-3746dd7f-6213-45bb-bc9d-807bc6747848.jpg" height="400"><img src="https://user-images.githubusercontent.com/15714095/163304462-14943a35-ad8a-48ab-b8a1-91c7e123726f.jpg" height="400"><img src="https://user-images.githubusercontent.com/15714095/163304485-80a20bae-bdb2-4b71-aa6a-d66f51612131.jpg" height="400">
 
-## Framew
-ork
+## Framework
 * Flutter
 
 ## Android APK Download 

@@ -1,5 +1,9 @@
 # HackUST Live.ly Flutter Demo App
 
+[![GitHub release](https://img.shields.io/github/release/jerrychong25/hackust-live-ly-flutter-demo-app.svg)](https://gitHub.com/jerrychong25/hackust-live-ly-flutter-demo-app/releases/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jerrychong25/hackust-live-ly-flutter-demo-app/graphs/commit-activity)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fjerrychong25%2Fhackust-live-ly-flutter-demo-app&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 This is HackUST Live.ly team demo app source code.
 
 ## Screenshots

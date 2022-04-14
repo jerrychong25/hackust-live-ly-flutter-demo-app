@@ -1,8 +1,6 @@
 // Copyright 2022 Live.ly team.
 // All rights reserved.
 
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
@@ -24,77 +22,8 @@ class MyLogin extends StatelessWidget {
                 const SizedBox(
                   height: 40,
                 ),
-                // TextFormField(
-                //   decoration: const InputDecoration(
-                //     hintText: 'Username',
-                //     hintStyle: TextStyle(color: Colors.grey),
-                //     contentPadding: EdgeInsets.symmetric(vertical: 15),
-                //     enabledBorder: UnderlineInputBorder(
-                //       borderSide: BorderSide(color: Colors.grey),
-                //     ),
-                //     focusedBorder: UnderlineInputBorder(
-                //       borderSide: BorderSide(color: Colors.grey),
-                //     ),
-                //     border: UnderlineInputBorder(
-                //       borderSide: BorderSide(color: Colors.grey),
-                //     ),
-                //   ),
-                //   style: TextStyle(color: Color(0xFFACF13C)),
-                //   cursorColor: Colors.yellow,
-                // ),
-                // TextFormField(
-                //   decoration: const InputDecoration(
-                //     hintText: 'Password',
-                //     hintStyle: TextStyle(color: Colors.grey),
-                //     contentPadding: EdgeInsets.symmetric(vertical: 15),
-                //     enabledBorder: UnderlineInputBorder(
-                //       borderSide: BorderSide(color: Colors.grey),
-                //     ),
-                //     focusedBorder: UnderlineInputBorder(
-                //       borderSide: BorderSide(color: Colors.grey),
-                //     ),
-                //     border: UnderlineInputBorder(
-                //       borderSide: BorderSide(color: Colors.grey),
-                //     ),
-                //   ),
-                //   style: TextStyle(color: Color(0xFFACF13C)),
-                //   cursorColor: Colors.yellow,
-                //   obscureText: true,
-                // ),
                 TextUsernamePasswordSubmitForm(
                     onSubmit: (value) => print(value)),
-                // const SizedBox(
-                //   height: 40,
-                // ),
-                // ElevatedButton(
-                //   onPressed: () {
-                //     Fluttertoast.showToast(
-                //         msg: 'Login Success!', toastLength: Toast.LENGTH_LONG);
-                //     Navigator.pushReplacementNamed(context, '/home');
-                //   },
-                //   style: ButtonStyle(
-                //     backgroundColor: MaterialStateProperty.all(Colors.black),
-                //   ),
-                //   child: Ink(
-                //     decoration: new BoxDecoration(
-                //       borderRadius: BorderRadius.circular(60),
-                //       gradient: new LinearGradient(
-                //         colors: [
-                //           Colors.green[300] as Color,
-                //           Colors.green[500] as Color
-                //         ],
-                //         begin: Alignment.topLeft,
-                //         end: Alignment.bottomRight,
-                //       ),
-                //     ),
-                //     padding: EdgeInsets.symmetric(horizontal: 70, vertical: 15),
-                //     child: new Text('Login',
-                //         style: TextStyle(
-                //           color: Colors.white,
-                //           fontSize: 17.0,
-                //         )),
-                //   ),
-                // ),
                 const SizedBox(
                   height: 20,
                 ),
@@ -200,28 +129,6 @@ class _TextUsernamePasswordSubmitFormState
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          // SizedBox(
-          //   height: 80,
-          //   child: TextFormField(
-          //     decoration: const InputDecoration(
-          //       hintText: 'Password',
-          //     ),
-          //     autovalidateMode: _submitted
-          //         ? AutovalidateMode.onUserInteraction
-          //         : AutovalidateMode.disabled,
-          //     // The validator receives the text that the user has entered.
-          //     validator: (text) {
-          //       if (text == null || text.isEmpty) {
-          //         return 'Can\'t be empty';
-          //       }
-          //       if (text.length < 4) {
-          //         return 'Too short';
-          //       }
-          //       return null;
-          //     },
-          //     onChanged: (text) => setState(() => _password = text),
-          //   ),
-          // ),
           TextFormField(
             decoration: const InputDecoration(
               hintText: 'Username',
@@ -287,19 +194,6 @@ class _TextUsernamePasswordSubmitFormState
             },
             onChanged: (text) => setState(() => _password = text),
           ),
-          // SizedBox(
-          //   height: 40,1
-          //   child: ElevatedButton(
-          //     onPressed: _name.isNotEmpty ? _submit : null,
-          //     child: Text(
-          //       'Submit',
-          //       style: Theme.of(context)
-          //           .textTheme
-          //           .headline6!
-          //           .copyWith(color: Colors.white),
-          //     ),
-          //   ),
-          // ),
           const SizedBox(
             height: 40,
           ),

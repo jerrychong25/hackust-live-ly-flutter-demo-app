@@ -19,8 +19,9 @@ Live.ly provides smart ideas for a better living experience by helping you ident
 
 ## Android APK Download 
 ```
-https://github.com/jerrychong25/hackust-live-ly-flutter-demo-app/blob/main/build/app/outputs/flutter-apk/app-release.apk
+https://github.com/jerrychong25/hackust-live-ly-flutter-demo-app/releases/download/v1.0.0/app-release.apk
 ```
+
 ## Build Project
 
 ```dart

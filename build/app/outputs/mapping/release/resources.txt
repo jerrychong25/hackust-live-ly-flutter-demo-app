@@ -1123,6 +1123,7 @@ layout:notification_template_icon_group:2131165188 => [dimen:notification_large_
 layout:notification_template_part_chronometer:2131165189 => [style:TextAppearance_Compat_Notification_Time:2131361797]
 layout:notification_template_part_time:2131165190 => [style:TextAppearance_Compat_Notification_Time:2131361797]
 layout:toast_custom:2131165191 => [drawable:corner:2130968576]
+mipmap:ic_launcher:2131230720 => [mipmap:ic_launcher_background:2131230721, mipmap:ic_launcher_foreground:2131230722]
 style:LaunchTheme:2131361792 => [drawable:launch_background:2130968577]
 style:NormalTheme:2131361793 => [attr:android_colorBackground:-1]
 style:TextAppearance_Compat_Notification_Info:2131361795 => [style:TextAppearance_Compat_Notification:2131361794, style:TextAppearance_Compat:-1, style:TextAppearance:-1]

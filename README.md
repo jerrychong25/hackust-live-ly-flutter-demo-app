@@ -25,9 +25,6 @@ https://github.com/jerrychong25/hackust-live-ly-flutter-demo-app/blob/main/build
 
 ```dart
 # Flutter Run
-$ flutter run
-
-# Flutter Run With No Sound Null Safety
 $ flutter run --no-sound-null-safety
 ```
 
@@ -35,7 +32,7 @@ $ flutter run --no-sound-null-safety
 
 ```dart
 # Build APK for Android
-$ flutter build apk --release
+$ flutter build apk --release --no-sound-null-safety
 ```
 
 ## Team Members

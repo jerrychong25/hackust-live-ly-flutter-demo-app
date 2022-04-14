@@ -31,13 +31,6 @@ $ flutter run --no-sound-null-safety
 $ flutter build apk --release
 ```
 
-## Build IPA For iOS
-
-```dart
-# Build IPA for iOS
-$ flutter build ios --release
-```
-
 ## Team Members
 * Jerry Chong
 * Charlotte Kimberly Andreassen
